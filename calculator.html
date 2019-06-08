@@ -4,6 +4,10 @@
     <title>Calculator</title>
     <meta charset="utf-8" />
     <script type="text/javascript">
+      function cuatro() {
+        var num = document.getElementById("n1");
+        num.value = Math.pow(num.value, 4);
+      }
       function cube() {
         var num = document.getElementById("n1");
         num.value = Math.pow(num.value, 3);
@@ -17,7 +21,6 @@
         num.value = 1/num.value;
       }
       function sin() {
->>>>>>> sin(x) button
         var num = document.getElementById("n1");
         num.value = Math.sin(num.value);
       }
@@ -35,6 +38,9 @@
     </p>
     <p>
       <button onclick="cube()">x^3</button>
+    </p>
+    <p>
+      <button onclick="cuatro()">x^4</button>
     </p>
     <p>
       <button onclick="sin()">sin(x)</button>
